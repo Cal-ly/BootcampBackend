@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeBeanLib", "CoffeeBeanLib\CoffeeBeanLib.csproj", "{227F6221-24EF-4A63-9D3B-098391E05ED3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeBeanTest", "CoffeeBeanTest\CoffeeBeanTest.csproj", "{149B6E42-DD2F-4531-B4AE-182D29CFCD28}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeBeanAPI", "CoffeeBeanAPI\CoffeeBeanAPI.csproj", "{0690992A-735C-4D04-92D6-725FDFCA31F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeBeanFrontendTests", "CoffeeBeanFrontendTests\CoffeeBeanFrontendTests.csproj", "{3C4FE2CC-B1B9-4033-8498-7481CCC52B6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{0690992A-735C-4D04-92D6-725FDFCA31F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0690992A-735C-4D04-92D6-725FDFCA31F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0690992A-735C-4D04-92D6-725FDFCA31F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C4FE2CC-B1B9-4033-8498-7481CCC52B6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C4FE2CC-B1B9-4033-8498-7481CCC52B6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C4FE2CC-B1B9-4033-8498-7481CCC52B6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C4FE2CC-B1B9-4033-8498-7481CCC52B6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
