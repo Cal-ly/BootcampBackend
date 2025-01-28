@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeBeanTest", "CoffeeBea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeBeanAPI", "CoffeeBeanAPI\CoffeeBeanAPI.csproj", "{0690992A-735C-4D04-92D6-725FDFCA31F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeBeanFrontendTests", "CoffeeBeanFrontendTests\CoffeeBeanFrontendTests.csproj", "{3C4FE2CC-B1B9-4033-8498-7481CCC52B6A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{0690992A-735C-4D04-92D6-725FDFCA31F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0690992A-735C-4D04-92D6-725FDFCA31F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0690992A-735C-4D04-92D6-725FDFCA31F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3C4FE2CC-B1B9-4033-8498-7481CCC52B6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C4FE2CC-B1B9-4033-8498-7481CCC52B6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C4FE2CC-B1B9-4033-8498-7481CCC52B6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C4FE2CC-B1B9-4033-8498-7481CCC52B6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

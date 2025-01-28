@@ -21,6 +21,13 @@ public class CoffeeBeanRepository
         return _coffeeBeans;
     }
 
+    /// <summary>
+    /// Retrieves a CoffeeBean by its Id.
+    /// </summary>
+    /// <param name="id">The Id of the CoffeeBean.</param>
+    /// <returns>The CoffeeBean object.</returns>
+    /// <exception cref="ArgumentException">Thrown when no CoffeeBean is found with the given Id.</exception>
+    /// <remarks> Uses the null-coalescing operator (??) to throw an exception if no CoffeeBean is found with the given Id. </remarks>
     public CoffeeBean GetById(int id)
     {
         return _coffeeBeans.FirstOrDefault(cb => cb.Id == id) ?? throw new ArgumentException("No CoffeeBean with such Id");

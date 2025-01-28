@@ -14,12 +14,26 @@ public class CoffeeBean
         ValidatePrice();
     }
 
+    /// <summary>
+    /// Validates the Name property.
+    /// </summary>
+    /// <exception cref="ArgumentException"></exception>
+    /// <remarks>
+    /// We conduct a null check first to avoid a NullReferenceException when calling the Length property. Then we conduct the length check.
+    /// </remarks>
     public void ValidateName()
     {
         if (string.IsNullOrWhiteSpace(Name) || Name.Length < 2)
             throw new ArgumentException("Name must be at least 2 characters long.");
     }
 
+    /// <summary>
+    /// Validates the Roasting property.
+    /// </summary>
+    /// <exception cref="ArgumentException"></exception>
+    /// <remarks>
+    /// An int (in C#) will never be null, so we only need to check if the value is within the expected range.
+    /// </remarks>
     public void ValidateRoasting()
     {
         if (Roasting < 1 || Roasting > 9)

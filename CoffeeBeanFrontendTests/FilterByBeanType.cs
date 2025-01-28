@@ -3,7 +3,7 @@ using OpenQA.Selenium.Chrome;
 
 namespace CoffeeBeanFrontendTests;
 
-// Yes, it is all written in ENG, instead of DK. Why? Can't stand Danglish
+// Yes, it is all written in ENG, instead of DK. Why? I Can't stand Danglish..
 [TestClass]
 public class FrontendTests
 {
@@ -15,7 +15,7 @@ public class FrontendTests
     {
         // Initialize Chrome WebDriver
         var options = new ChromeOptions();
-        options.AddArgument("--headless"); // Optional: Run tests without opening the browser
+        options.AddArgument("--headless"); // Optional: Run tests without opening the browser. Comment it out to see the browser open and close.
         driver = new ChromeDriver(options);
     }
 
