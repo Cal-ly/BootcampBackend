@@ -2,13 +2,6 @@
 
 This repository contains a solution for managing coffee beans, including an API, a library, and unit tests. The solution is structured into three main projects: CoffeeBeanAPI, CoffeeBeanLib, and CoffeeBeanTest.
 
-## Table of Contents
-- [Project Structure](#project-structure)
-- [Projects](#projects)
-  - [CoffeeBeanAPI](#coffeebeanapi)
-  - [CoffeeBeanLib](#coffeebeanlib)
-  - [CoffeeBeanTest](#coffeebeantest)
-
 ## Project Structure
 
 The solution is organized into the following projects:
@@ -31,6 +24,8 @@ The solution is organized into the following projects:
 **Dependencies**:
 - `Swashbuckle.AspNetCore`: For generating Swagger documentation.
 
+---
+
 ### CoffeeBeanLib
 
 **Description**: This project contains the core business logic and models for the coffee bean application. It includes classes and methods for validating and managing coffee bean data.
@@ -39,6 +34,8 @@ The solution is organized into the following projects:
 - `CoffeeBeanLib.csproj`: Project file containing dependencies and build configurations.
 - `CoffeeBean.cs`: Model class representing a coffee bean.
 - `CoffeeBeanAlt.cs`: Alternative implementation of the CoffeeBean class with property validation.
+
+---
 
 ### CoffeeBeanTest
 
