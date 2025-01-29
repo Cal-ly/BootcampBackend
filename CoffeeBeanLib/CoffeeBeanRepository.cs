@@ -16,6 +16,12 @@ public class CoffeeBeanRepository
         Add(new CoffeeBean { Name = "MediumBlendedDream", BeanType = "Arabica/Liberica", Roasting = 7, Price = 75.0 });
     }
 
+    /// <summary>
+    /// Retrieves all CoffeeBeans.
+    /// </summary>
+    /// <param> There is no input parameter </param>
+    /// <returns> A list of CoffeeBeans </returns>
+    /// <remarks> Here we see the returntype is a List of objects (CoffeeBeans). In the code block we see the keyword 'return' and it returns the variable _coffeeBean </remarks>
     public List<CoffeeBean> GetAll()
     {
         return _coffeeBeans;
@@ -31,6 +37,23 @@ public class CoffeeBeanRepository
     public CoffeeBean GetById(int id)
     {
         return _coffeeBeans.FirstOrDefault(cb => cb.Id == id) ?? throw new ArgumentException("No CoffeeBean with such Id");
+    }
+
+    public CoffeeBean? GetById2(int id)
+    {
+        foreach(CoffeeBean? coffeeBean in _coffeeBeans)
+        {
+            if (coffeeBean.Id == id)
+            {
+                return coffeeBean;
+            }
+        }
+        return null;
+    }
+
+    public CoffeeBean? GetById3(int id) // Probably the solution the teachers want to see
+    {
+        return _coffeeBeans.FirstOrDefault(cb => cb.Id == id);
     }
 
     public void Add(CoffeeBean coffeeBean)
@@ -80,5 +103,15 @@ public class CoffeeBeanRepository
         {
             _coffeeBeans.Remove(coffeeBean);
         }
+    }
+
+    public CoffeeBean? Remove2(int id) //The way the assignment wants it
+    {
+        CoffeeBean? coffeeBean = GetById3(id);
+        if (coffeeBean != null)
+        {
+            _coffeeBeans.Remove(coffeeBean);
+        }
+        return coffeeBean;
     }
 }
